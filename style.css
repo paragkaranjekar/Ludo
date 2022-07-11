@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Prompt:wght@300&display=swap');
+
+body{
+    margin:0px;
+}
+
+.container{
+    display:flex;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.board{
+    border: 0.5px solid black;
+    width:640px;
+    height:640px;
+    display: grid;
+    grid-template-columns: repeat(8,80px);
+    grid-template-rows: repeat(8,80px);
+}
+
+.box{
+    border: 0.1px solid black;
+    text-align: center;
+}
+
+.largebox {
+    border: 0.1px solid black;
+    grid-column: 2/8;
+    grid-row: 2/8;
+}
+
+
+.Astart{
+    border: 0.1px solid black;
+    background: rgba(255, 0, 0, 0.8);
+}
+.Afinish {
+    border: 0.1px solid black;
+    background: rgba(255, 0, 0, 0.2);
+}
+
+.Bstart {
+    border: 0.1px solid black;
+    background: rgba(0, 0, 255, 0.8);
+}
+.Bfinish {
+    border: 0.1px solid black;
+    background: rgba(0, 0, 255, 0.2);
+}
+
+h1,h2{
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+
+.homeA {
+    border: 0.5px solid black;
+    width: 220px;
+    height: 140px;
+    margin-right: 20px;
+    margin-top:-500px;
+    display: flex;
+}
+
+.homeA h2{
+    margin-right: -150px;
+    padding-left:40px;
+    
+}
+.homeA p{
+    margin-top: 60px;
+}
+p {
+    width: 20px;
+    height: 20px;
+    padding: 20px;
+    background-color: red;
+    border: 1px solid white;
+    border-radius: 50px;
+    margin-top: 7px;
+    margin-left: 7px;
+}
+.homeB h2 {
+    margin-right: -150px;
+    padding-left: 40px;
+
+}
+
+.homeB .pieceB {
+    margin-top: 60px;
+}
+
+.homeB {
+    border: 0.5px solid black;
+    width: 220px;
+    height: 140px;
+    margin-left: 20px;
+    margin-bottom: -500px;
+    display: flex;
+}
+
+.pieceB {
+    width: 20px;
+    height: 20px;
+    padding: 20px;
+    background-color: blue;
+    border: 1px solid white;
+    border-radius: 50px;
+    margin-top: 7px;
+    margin-left: 7px;
+}
+
+
+
+
+/* dice roll middle box */
+
+.roll {
+    position: absolute;
+    border: 0.5px solid black;
+    width: 200px;
+    height: 300px;
+    display: grid;
+    grid-template-rows: repeat(3, 100px);
+}
+.col {
+    border: 0.1px solid black;
+    text-align: center;
+    justify-content: center;
+    font-family: "Montserrat",sans-serif;
+    font-size: 20px;
+}
+
+.col .button{
+    font-family: "Montserrat",
+            sans-serif;
+        font-size: 32px;
+    padding: 29px 45px;
+    border: none;
+    cursor: pointer;
+}
+
+.col .button:active {
+    background-color: rgb(118, 118, 118);
+}
